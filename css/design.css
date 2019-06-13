@@ -1,0 +1,1064 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+        *{
+            padding:0px;
+            margin:0px;
+            font-family: sans-serif;
+        }
+        body{
+            margin:0;
+            padding:0;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+         h1{
+             font-size: 100px;
+         }
+/*หน้าแรก*/
+         .btn{
+            color:#550055;
+            position: absolute; 
+            transform: translate(-50%,-50%);
+            top: 80%;
+            left: 90%;
+            width:200px;
+            height: 50px;
+            background-color: #D3D3D3;
+            font-size: 20px;
+            overflow : hidden;
+            letter-spacing: 3px;
+            opacity: 0.8;
+            border:none;
+            position:fixed;
+        } 
+        .btn2{
+            color:#550055;
+            position: absolute; 
+            transform: translate(-50%,-50%);
+            top: 90%;
+            left: 90%;
+            width:200px;
+            height: 50px;
+            background-color: #D3D3D3;                     
+            font-size: 20px;
+            letter-spacing: 3px;
+            overflow : hidden;
+            opacity: 0.8;
+            border:none;
+            position:fixed;
+        } 
+        .btn:before{
+            content: '';
+            position: absolute;
+            background-color:#000000;
+            width:0;
+            height:100%;
+            transform:skewX(15deg);
+            transition:0.5s;
+            top:0;
+            left: -10%;
+            z-index: -1;
+        }
+        .btn:hover{
+            opacity: 0.9;
+            cursor: pointer;
+            color:white;
+        }
+        .btn:hover:before{
+            width: 100%;
+        }
+       
+        .btn2:before{
+            content: '';
+            position: absolute;
+            background-color:#000000;
+            width:0;
+            height:100%;
+            transform:skewX(15deg);
+            transition:0.5s;
+            top:0;
+            left: -10%;
+            z-index: -1;
+        }
+        .btn2:hover{
+            opacity: 0.9;
+            cursor: pointer;
+            color:white;
+        }
+        .btn2:hover:before{
+            width: 100%;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+         .welcome{
+            background:url('../img/vector16.jpg') no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            display:flex;
+            justify-content : center;
+            align-items:center;
+        }
+        .welcome span{
+            color:whitesmoke;
+            text-transform: uppercase;
+            text-align:center;
+            display:block;
+        }   
+        .welcome2{
+            background:url(../img/raster04.jpg) no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content : center;
+            align-items:center;
+            overflow:hidden;
+        }
+        .welcome3{
+            background:url(../img/raster05.jpg) no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content : center;
+            align-items:center;
+            overflow:hidden;
+        }
+        .welcome4{
+            background:url(../img/raster06.jpg) no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content : center;
+            align-items:center;
+            overflow:hidden;
+        }
+        .welcometext1{
+            font-size: 60px;
+            color:whitesmoke;    
+            font-weight: 700;
+            letter-spacing: 8px;
+            animation:text 3s 1;
+            padding:20px;
+            border:3px solid#fff;
+            border-radius:3px;                            
+            
+        }
+        .firstText{
+            color:whitesmoke;
+            text-transform: uppercase;
+            display:block;
+            font-weight: 700;
+            font-size:50px;
+            padding:20px;
+            background-color:whitesmoke;
+            color:black;
+            border-radius:10px;
+            opacity:0.7;
+            
+        }
+         @keyframes slider {
+            0% {
+                left: 0;
+                }
+            20% {
+                left: 0;
+                }
+            25% {
+                left: -100%;
+                }
+            45% {
+                left: -100%;
+                }
+            50% {
+                left: -200%;
+                }
+            70% {
+                left: -200%;
+                }       
+            75% {
+                left: -300%;
+                }
+            95% {
+                left: -300%;
+                }
+            100% {
+                left: -400%;
+                }
+            }
+            #slider {
+                overflow: hidden;
+            }
+            #slider figure img {
+                width: 7%;
+            }
+            #slider figure {
+                position: relative;
+                width: 476%;
+                margin: 0;
+                left: 0;
+                text-align: left;
+                font-size: 0;
+                animation: 20s slider infinite; 
+            }                                                
+/*หน้าlogin*/
+        .SignIn{
+            border: 0px solid #993366;
+            font-size: 25px; 
+            width: 440px;
+            position:absolute;
+            transform:translate(-50%,-50%);
+            top:50%;
+            left:50%;
+            text-align: center;
+            background-color: #333333;
+            border-radius: 20px;
+            opacity: 0.9;
+        
+        }
+        .SignIn img{
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            margin-top: -60px;
+        }
+        .SignIn:hover{
+            border-color:#F5F5F5;
+            box-shadow:0 0 15px 2px #330033;
+            transition :0.3s;  
+        }
+        .inputLogin:focus{
+            border-color:#F5F5F5;
+            box-shadow:0 0 8px 0 #F5F5F5;
+          }
+         
+                  
+/*icon*/
+          .inputWithIcon input[type=text]{
+            padding-left:60px;
+          }
+          .inputWithIcon input[type=password]{
+            padding-left:60px;
+          }    
+          .inputWithIcon input[type=Email]{
+            padding-left:60px;
+          } 
+          
+          .inputWithIcon{
+            position:relative;
+          }
+          
+          .inputWithIcon i{
+            position:absolute;
+            transform:translate(50%,50%);
+            left:40px;
+            top:-10px;
+            padding:7px 7px;
+            color:#aaa;
+            transition:.3s;
+          }                          
+          .inputWithIcon.inputIconBg i{
+            background-color:#aaa;
+            color:#fff;
+            padding:6.5px 4px;
+            border-radius:4px 0 0 4px;
+          }
+          .inputWithIcon.inputIconBg input[type=text]:focus + i{
+            color:#2F4F4F;
+            background-color:whitesmoke;
+          }
+          .inputWithIcon.inputIconBg input[type=password]:focus + i{
+            color:#2F4F4F;
+            background-color:whitesmoke;
+          }
+          .inputWithIcon.inputIconBg input[type=Email]:focus + i{
+            color:#2F4F4F;
+            background-color:whitesmoke;
+          }
+        
+        .inputLogin{
+            height: 40px;
+            width: 300px;
+            font-size: 20px;
+            margin-top: 30px; 
+            background-color: whitesmoke;
+            border: none;
+            padding-left: 20px;
+        }
+        .btnSignin{
+            font-weight: 400;
+            border-radius:5px;
+            width: 320px;
+            font-size: 15px; 
+            display: inline-block;
+            margin-top:30px;
+            overflow : hidden;
+            padding:8.5px 8.5px; 
+            background:#D3D3D3; 
+            cursor:pointer;
+            transition: 0.5s;
+            border: none;
+      
+         }
+         .btnSignin:hover{
+            border-radius:10px;
+            font-size:17px;
+            background-color: #696969;
+            color: whitesmoke;
+            border-color:#F5F5F5;
+            box-shadow:0 0 5px 1px #F5F5F5;
+        }
+        
+        .Signuphead{
+            color:whitesmoke;
+        }
+        .SignUp{
+            border: 0px solid #993366	;
+            font-size: 25px; 
+            width: 430px;
+            position:absolute;
+            transform:translate(-50%,-50%);
+            top:50%;
+            left:50%;
+            text-align: center;
+            background-color: #333333;
+            border-radius: 20px;
+            opacity: 0.9;
+        
+        }
+        .SignUp:hover{
+            border-color:#F5F5F5;
+            box-shadow:0 0 15px 2px #330033;
+            transition :0.3s;  
+        }
+       .SignUp img{
+           width: 120px;
+           height: 120px;
+           margin: auto;
+           margin-top: -60px;
+       }
+       
+/*image slide หน้า home*/
+    .post{
+        width: 300px;
+        height: 150px;
+        position:relative;
+        cursor: pointer;
+      }
+      .post:hover .post-s{
+        width : 300px;
+        height : 150px;
+      }
+      .post img {
+        display: block;
+        width:300px;
+        height: 150px;
+      }
+      .post-s{
+        width: 0px;
+        height: 150px;
+        background: rgba(2, 2, 2, 0.71);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.3s ease;
+      }
+      .post-s h2{
+        color: white;
+        font-size: 15px;
+        border: 2px solid white;
+        padding: 10px 10px;
+      }
+      .post-s h2:hover{
+        background-color:#FAF0E6;
+        color: black;
+        font-size: 15px;
+        transition:0.5s;
+        border: 4px solid black;
+        padding: 10px 10px;
+      }
+    
+    /*form create*/
+    .icon{
+        font-size:150px;       
+   }   
+   .CreateJob{
+        color:whitesmoke;
+        background-color:black;
+        background-size:cover;
+        border: 0px solid #993366	;
+        font-size: 35px; 
+        width: 1100px;
+        margin: auto;
+        margin-top: 70px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow:0 0 30px black;
+        opacity: 0.85;
+    }
+    .TextFrame{
+        font-size:20px;
+        background-color:black;
+        border: none;
+        border-bottom:1px solid #2F4F4F;
+        width:70%;
+        outline:none;
+        box-sizing:border-box;
+        color:whitesmoke;
+        transition:.3s;
+    }
+    .TextFrame:focus{
+        color:whitesmoke;
+        background:#2F4F4F;
+        border : none;
+        transition : 0.5s;
+    }
+    input[type='file']{
+        background-color:black;  
+        margin-left:150px; 
+    }
+    input[type='file']::-webkit-file-upload-button{
+        padding :3px 2px;
+        margin-top:5px;
+        border-radius:10px;
+        color:black;
+        background-color:whitesmoke;
+        border:none;
+    }
+    input[type='file']::-webkit-file-upload-button:hover{
+        background-color:#2F4F4F;
+        color:white;
+        transition:0.25s;
+        cursor:pointer;
+        
+    }
+    .CreateBtn{
+        width:850px;
+        padding :5px;;
+        background-color:whitesmoke;
+        color:black;
+        text-align:center;
+        border:none;
+        
+    }
+    .CreateBtn:hover{
+        background-color:#2F4F4F;
+        color:whitesmoke;
+        transition:0.4s;
+        cursor:pointer;
+        border-radius:10px;
+    }  
+  
+    #imageOld{
+        text-decoration:none;
+    }
+    #imageOld:hover{
+        text-decoration:underline;
+    }
+    .link{
+        text-decoration:none;   
+    }
+    .link:hover{
+        text-decoration:underline;
+     
+    }
+    #boxAlert{
+        position : absolute;
+        top: 700%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        opacity:0.9;
+        border:0px solid#fff;
+        box-shadow:0 0 20px white;
+        border-radius:15px;
+        width:500px;
+        overflow:hidden;
+        background:#000;
+        font-size:20px;
+        cursor:pointer;
+        z-index:9999;
+        padding:10px;
+        text-align:center;
+        display:none;
+      }
+       #boxAlert span{
+         font-size:70px;
+       }
+      .go{
+        background:whitesmoke;
+        padding:10px;
+        color:black;
+        border-radius:5px;
+      }    
+      .go:hover{
+        background-color:#330033;
+        color:whitesmoke;
+        transition:0.3s;
+        padding:15px;
+        box-shadow:0 0 20px white;
+      }
+
+
+/*Home*/
+
+#searching{
+    position : absolute;
+    transform:translate(-50%,-50%);
+    top: 700%;
+    left:50%;
+    opacity:0.9;
+    overflow:hidden;
+    border:none;
+    box-shadow:0 0 20px black;
+    border-radius:15px;
+    width:500px;
+    background:#DCDCDC;
+    font-size:20px;
+    z-index:9999;
+    padding:10px;
+    text-align:center;  
+    display:none;
+  }
+ .SearchInput{
+   padding-left:10px;
+    background-color : #330033;
+    color:white;
+    margin:auto;
+ }
+  .iconSearch{
+    color:black;
+    font-size:70px;
+    display:block;
+  }
+  .SearchBtn{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    left:50%;
+    top:80%;
+    padding:5px;
+    width:20%;
+    border-radius:15px;
+    border:none;
+    background-color:#2F4F4F;
+    color:whitesmoke;
+    font-weight:bold;
+  }
+  .SearchBtn:hover{
+    color:black;
+    background:whitesmoke;;
+    transition:0.3s; 
+    cursor:pointer; 
+  }
+  .Closebtn{
+    color:black;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:7%;
+    left:4%;
+  }
+  .Closebtn:hover{
+    cursor:pointer; 
+    color:#D3D3D3;
+  }
+
+/*ribbon*/
+      .Ribbon{
+        background-color:whitesmoke;
+        padding:40px;
+        margin:auto;
+        width:80%;
+        box-shadow:0 0 10px black;
+        color:black;
+        text-shadow:none;
+        position:relative;
+      }
+      .Ribbon h2{
+        margin:0;
+        position:absolute;
+        top:10px;
+        left:-20px;
+        background:black;
+        color:white;
+        padding:4px 20px;
+      }
+      .Ribbon h2:before{
+        content:'';
+        width:24px;
+        height:24px;
+        position:absolute;
+        background:#515f66;
+        left:8px;
+        bottom:-12px;
+        transform:rotate(-45deg);
+        z-index:-1;
+      }              
+      .CategoryClass{
+        color:black;
+        padding:2px;
+        background-color:#DCDCDC;
+      }
+      .CategoryClass:hover{
+        cursor:pointer;
+        background-color:#BEBEBE;
+        transition:0.3s;
+      }
+      
+
+/*content*/
+     .Newsjob{
+        text-align:center;
+        opacity:0.9;
+        background-color:#D3D3D3;
+        background-attachment:fixed;
+        color:#2F4F4F;
+        text-shadow:none;
+      }       
+    .Newsjob2{
+        color:black;
+        text-shadow:none;
+        text-align:center;
+        opacity:095;
+        background-color:#708090;
+        background-attachment:fixed;       
+    }
+    .Newsjob3{
+        margin-top :-15px;
+        text-align:center;
+        opacity:0.9;
+        background-color:#D3D3D3;
+        color:black;
+        text-shadow:none;
+        background-attachment:fixed;
+    }
+      #HeadHot{
+         font-weight:bold;
+         font-size:40px;
+         text-align:center;
+         position:relative;
+      }
+      #New{
+         font-weight:bold;
+         font-size:40px;
+         text-align:center;
+         position:relative;
+         
+      }
+      .dateclass{
+        color:whitesmoke;
+        text-shadow:none;
+        text-align:left;
+      }
+      a:hover{
+        color:black;
+      }
+      .detail{
+        font-weight:bold;
+        font-size:16px;
+        color:#FFF5EE;
+        text-shadow:none;
+        text-align:left;
+      }
+      .HomeContent{
+        padding:3px;
+        box-shadow: 0 0 10px;
+        border-radius:5px;
+        opacity:0.5;
+        width:110%;
+        background-color: black;
+      }   
+      .footer{
+        background-color:black	;
+        margin:0;
+        padding:0;
+        color:whitesmoke;
+        text-align:center;
+        opacity:0.9;
+        border-radius:0px;
+        box-shadow:0 0 20px black;
+      }
+      .iconFB{                        
+        text-align:center;
+        font-size:30px;
+      }
+      .iconFB:hover{
+        color:#006699;
+      }
+      #Copyright{
+        font-size:20px;
+        font-weight:bold;
+      }
+      .linkFooter:hover{
+        color:#0099CC;
+      }
+      .liner h1{
+        display: inline-block;
+        *display: inline; 
+        zoom:1;
+        margin: 20px 0 0 20px;
+      }
+      .word{
+        background-color:whitesmoke;
+        color:black;
+        text-shadow:none;
+        opacity:0.8;
+      }  
+     .more{
+        font-weight:bold;
+        background-color:whitesmoke;
+        margin-top:20px;
+        text-align:center;
+        color:black;
+        text-shadow:none;
+        display:inline-block;
+        padding:10px;
+        box-shadow:0 0 10px;
+        opacity:0.7;
+        border-radius:5px;
+        margin-right:15px;
+      }    
+      .more:hover{
+        color:white;
+        cursor:pointer;
+        background-color :black;
+        transition:0.4s;       
+      }
+
+
+/*pagenew*/
+      .wrapNew{
+        opacity:1;
+        border: 0px solid #fff;
+        font-size: 25px; 
+        width: 1000px;
+        margin: auto;
+        text-align: center;
+        background-color:#F5F5F5;
+        color:black;
+        border-radius:10px;
+        box-shadow:0 0 20px black;
+   }  
+   .wrapNew h3{
+        box-shadow:0 0 5px black;
+        width:20%;
+        margin:0;
+        position:relative;
+        top:10px;
+        left:-20px;
+        background:#708090;
+        color:white;
+        padding:4px 15px;
+      }
+      .wrapNew h3:before{
+        box-shadow:0 0 5px black;
+        content:'';
+        width:24px;
+        height:24px;
+        position:absolute;
+        background:#515f66;
+        left:8px;
+        bottom:-12px;
+        transform:rotate(-45deg);
+        z-index:-1;
+      }  
+   
+   .jobsHead{
+       margin-top:-10px;
+       color:black;
+       background-color:#D3D3D3;
+   }
+   .newsItem{
+        text-align:left;
+  }
+  .SendResume{
+        width:850px;
+        padding :5px;;
+        background-color:#2F4F4F;
+        color:whitesmoke;
+        text-align:center;
+        border:none;
+    
+}
+    .SendResume:hover{
+        background-color:#708090;
+        color:#E6E6FA;
+        transition:0.4s;
+        cursor:pointer;
+        border-radius:10px;
+}  
+
+/*rerciveResume*/
+    .accept{
+        background-color:#2F4F4F;
+        color:whitesmoke;
+        margin:auto;
+        border:none;
+        width:100%;
+        height: 30px;
+        border-radius:3px;
+    }
+    .accept:hover{
+        background-color:#D3D3D3;
+        cursor:pointer;
+        color:black;
+        transition:0.3s;
+    }
+    .ResumeID{
+        position:relative;
+        left:50%;
+        padding:15px;
+        display:inline-block;
+        background-color:whitesmoke;
+        box-shadow:0 0 10px;
+    }
+
+/*account*/
+    .wrapAccount{
+        border: 0px solid #993366;
+        font-size: 25px; 
+        width: 500px;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        top:50%;
+        left:50%;
+        text-align: center;
+        background-color: #AFEEEE;
+        color:black;
+        text-shadow:none;
+        opacity: 0.9;    
+        box-shadow:0 0 20px black;          
+    }
+    .wrapAccount h2{
+        font-weight:bold;
+    }
+    .wrapAccount img{
+        margin-top:-60px;
+        width:120px;
+        height:120px;
+    }
+    .accountElement{
+        color:black;
+        background-color:#F5FFFA;
+        padding:10px;
+    }
+    .accountElement:hover{
+        color:#F5FFFA;
+        background-color:black;
+        transition:0.4s;
+    }
+
+/*Mail*/
+    .MailHead{       
+        font-size:100px;
+    }
+    .Mail{
+        color:black;
+        background-color:#F5F5F5;
+        padding:10px;
+    }
+    .Mail:hover{
+        background-color:#708090;
+        cursor:pointer;
+        transition:0.3s;
+    }
+    .Mailtext{
+        color:black;
+    }
+    .Mailtext:hover{
+        color:whitesmoke;
+    }
+
+    .Mail2{
+        color:black;
+        background-color:#FAF0E6;
+        padding:10px;
+    }
+    .Mail2:hover{
+        background-color:#D3D3D3;
+        cursor:pointer;
+        transition:0.3s;
+    }
+    .Mailtext2{
+        color:black;
+    }
+    .Mailtext2:hover{
+        color:#000033;
+    }
+    .wrapMail{
+        border: 0px solid #993366;
+        font-size: 25px; 
+        width: 50%;
+        position:absolute;
+        transform:translate(-50%);
+        top:10%;
+        left:50%;
+        text-align: center;
+        background-color: #AFEEEE;
+        color:black;
+        text-shadow:none;
+        opacity: 0.9;    
+        box-shadow:0 0 20px black;          
+    }
+    .wrapMail h2{
+        font-weight:bold;
+    }
+
+
+    /*changepassword*/
+    .inputChangepass{
+        width:70%;
+        margin:auto;
+        padding-left:50px;
+        border:none;
+        background-color:#F5F5F5;
+        box-shadow:0 0 10px;
+    }
+    .inputChangepass:focus{
+        background-color:#FAF0E6;
+    }
+    .iconPassword{
+        position:relative;
+        transform:translate(50%,50%);
+        left:40px;
+        top:0px;
+        padding:5px 5px;
+        opacity:0.5;    
+        transition:.3s;
+    }
+    .btnchangePass{
+        position:absolute;
+        transform:translate(-50%,-50%);
+        left:50%;
+        width: 320px;
+        font-size: 15px; 
+        overflow : hidden;
+        padding:8.5px 8.5px; 
+        background:#2F4F4F; 
+        color:whitesmoke;
+        cursor:pointer;
+        border: none;
+    }
+    .btnchangePass:hover{
+        background-color:whitesmoke;
+        color:#2F4F4F;
+        transition:0.6s;
+    }
+
+    /*myjob table*/
+    .wrapNotHaveJob{
+        background-color:#DCDCDC;
+        padding:50px;
+        color:black;
+        text-align:center;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        top:50%;
+        left:50%;
+        box-shadow:0 0 20px black;
+        
+    }
+    .Cross{
+        font-size:100px;
+    }
+    .NotHaveJob{
+        font-size:60px;
+    }
+    .GotoCreate{
+        font-size:30px;
+        padding:10px;
+        background-color:black;
+        color:white;
+    }
+    .GotoCreate:hover{
+        text-decoration:none;
+        background-color:white;
+        color:black;
+        transition:0.4s;
+    }
+    .tableLink{
+        padding: 10px;
+    }  
+    .tableLink:hover{
+        background-color:whitesmoke;
+        color:black;
+        box-shadow:0 0 20px black;
+       transition:0.3s;
+    }
+
+    /*myresume*/
+    .editIcon{
+        color:black;
+        font-size:30px;
+        margin-left:20px;
+      }
+      .editIcon:hover{
+        color:grey;
+        transition:0.3s;
+      }
+
+      /*agreement*/
+      .dialogAccept{
+        padding:20px;
+        position:absolute;
+        transform:translate(-50%,-50%);
+        top:50%;
+        left:50%;
+        width:800px;
+        background-color:black;
+        display:block;
+        box-shadow: 0 0 50px black;
+        opacity:0.9;
+    }
+    .TextConfirm{  
+        background:#2F4F4F;
+        border:none;
+        font-size:25px;      
+        width:100%;
+        height:150px;
+    }
+    .TextConfirm:focus{
+        background:#708090;
+        transition:0.5s;
+    }
+    .btnConfirm{
+        margin-right:20px;
+        background-color:#AFEEEE;
+        margin:auto;
+        border:none;
+        padding:5px;
+        font-weight:bold;        
+    }
+    .btnConfirm:hover{
+        transition:0.3s;
+        background:#696969;
+        color:whitesmoke;
+    }
+    .HeadConfirm{
+        font-size:30px;
+        font-weight:bold;
+    }
+    .Back{
+        background-color:white;
+        color:black;
+        padding:10px;
+    }
+    .Back:hover{
+        background-color:#2F4F4F;
+        color:whitesmoke;
+        transition:0.4s;
+    }
+    
+
+
+     
